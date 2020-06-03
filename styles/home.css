@@ -1,5 +1,77 @@
 @font-face {
-  font-family: "main";
+  font-family: "title";
   src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf")
     format("truetype");
+}
+
+@font-face {
+  font-family: "main";
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf")
+    format("truetype");
+}
+
+body {
+  font-family: "main";
+  overflow: hidden;
+}
+
+/* On s'occupe du header */
+header {
+  margin: 0;
+  font-family: "title";
+  width: 100%;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Le conteneur avec la gallerie et le menu */
+#main {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* On s'occupe du menu */
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 80vh;
+  width: 100%;
+}
+
+#menu p {
+  padding-left: 5px;
+  transition: padding-left 0.1s linear;
+}
+
+#menu p:hover {
+  padding-left: 15px;
+}
+
+#menu h1 {
+  font-family: "title";
+  margin-bottom: 10px;
+  margin-left: 45%;
+  transition: margin-left 0.6s ease-out;
+}
+
+section {
+  margin-left: 45%;
+  margin-bottom: 50px;
+  transition: margin-left 0.6s ease-out;
+}
+
+#menu h1.left,
+section.left {
+  margin-left: 5%;
+}
+
+/* Ici on s'occupe de la gallerie */
+#gallerie section {
+  display: none;
 }
