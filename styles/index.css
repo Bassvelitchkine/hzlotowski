@@ -1,8 +1,17 @@
+/* On ajoute une nouvelle police. tu peux en télécharger d'autres sur Google fonts, les mettres dans le dossier font 
+et changer le code, évidemment */
+@font-face {
+  font-family: "bouton";
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf")
+    format("truetype");
+}
+
 html,
 body {
   height: 100vh;
   width: 100vw;
   margin: 0;
+  overflow: hidden;
 }
 
 /* Ici on s'occupe de la video */
@@ -40,6 +49,21 @@ body {
 
 #bouton a {
   display: block;
+  font-family: "bouton";
+  padding: 0.5em 3em;
+  border: 0.16em solid #ffffff;
   text-decoration: none;
-  color: white;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.15s;
+}
+
+#bouton a:hover {
+  color: rgb(182, 182, 182);
+  border-color: rgb(182, 182, 182);
+}
+#bouton a:active {
+  color: #bbbbbb;
+  border-color: #bbbbbb;
 }
