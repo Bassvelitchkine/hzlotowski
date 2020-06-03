@@ -9,21 +9,29 @@
       name="description"
       content="Je suis passionné par le cinéma et la photographie. Vous découvrirez ici mes travaux marquants, ceux dont je suis le plus fier."
     />
+    <!-- Le lien vers la feuille css de la landing -->
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
 
   <body>
     <!-- Ici le bloc contenant la vidéo qui tourne en boucle derrière -->
-    <div>
-      <video poster="assets/photos/videoPreview.png" muted loop autoplay>
-        <p>
-          Votre navigateur ne prend malheureusement pas en charge les vidéos...
-          Il est grand temps d'en changer !
-        </p>
-        <source src="assets/videos/videoLanding.mp4" type="video/mp4" />
-      </video>
-    </div>
+
+    <video
+      poster="assets/photos/videoPreview.png"
+      id="video"
+      muted
+      loop
+      autoplay
+    >
+      <!-- Le message ci-dessous s'affiche quand le navigateur ne prend pas en charge la balise "video" mais c'est rare -->
+      <p>
+        Votre navigateur ne prend malheureusement pas en charge les vidéos... Il
+        est grand temps d'en changer !
+      </p>
+      <source src="assets/videos/videoLanding.mp4" type="video/mp4" />
+    </video>
     <!-- Ici le bloc qui contient le bouton permettant d'entrer sur le site -->
-    <div>
+    <div id="bouton">
       <a href="pages/home.html">ENTER WEBSITE</a>
     </div>
   </body>

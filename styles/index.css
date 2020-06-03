@@ -1,0 +1,45 @@
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+/* Ici on s'occupe de la video */
+#video {
+  position: fixed;
+  z-index: 0;
+}
+
+/* En fonction du ratio entre largeur et hauteur de la fenêtre, on prend l'une ou l'autre des décisions concernant la taille */
+@media (min-aspect-ratio: 16/9) {
+  #video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #video {
+    height: 100%;
+    width: auto;
+  }
+}
+
+/* Ici on s'occupe du bouton */
+#bouton {
+  position: absolute;
+  top: 0;
+  width: 98%;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bouton a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
