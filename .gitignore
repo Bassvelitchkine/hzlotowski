@@ -1,0 +1,17 @@
+# Le principe de base de git est de te permettre de faire ce qu'on appelle du contrôle de version
+# En faisant des espèces de "sauvegardes" régulières, tu peux garder une trace de ce qui a été fait par les différents 
+# contributeurs du projet. Ces sauvegardes régulières se font sur ta machine, localement, mais aussi, si tu le 
+# souhaites, sur une plateforme (dans notre cas Github mais ça pourrait aussi être Gitlab). Cela te permet d'une part
+# de partager ton code, et d'autre part, d'en avoir une version conservée sur un serveur distant (et pas seulement sur 
+# ta machine, comme tes photos quand tu les mets dans googe drive).
+
+# En revanche, sans action supplémentaires, dès que tu décides de prévenir le serveur distant (donc sur Github) de tes 
+# modifications, le serveur recueille TOUT ce qu'il y a dans ton dossier github. Donc il y a aussi les photos, vidéos
+# tous les fichiers très lourds, à côté du code. Et eux, contrairement au code, tu n'as pas besoin de les mettre
+# sur le serveur distant, ils sont très lourds, ça va te ralentir à chaque fois que tu voudras sauvegarder.
+
+# Du coup, et j'en ai fini avec ce long pavé, tu créés un fichier .gitignore comme celui-ci qui indique à git
+# les fichiers et les dossiers qu'il peut ignorer. Dans notre cas, ce sera tout le dossier assets qui contient
+# les photos et les vidéos.
+
+assets
