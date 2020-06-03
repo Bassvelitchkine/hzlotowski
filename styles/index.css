@@ -1,7 +1,7 @@
 /* On ajoute une nouvelle police. tu peux en télécharger d'autres sur Google fonts, les mettres dans le dossier font 
 et changer le code, évidemment */
 @font-face {
-  font-family: "bouton";
+  font-family: "main";
   src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf")
     format("truetype");
 }
@@ -14,9 +14,35 @@ body {
   overflow: hidden;
 }
 
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* On s'occupe du titre */
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  font-family: "main";
+  z-index: 200;
+  width: 100%;
+  padding: 20px;
+}
+
+h1 p {
+  color: white;
+  margin: 0;
+}
+
 /* Ici on s'occupe de la video */
 #video {
   position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 0;
 }
 
@@ -49,7 +75,7 @@ body {
 
 #bouton a {
   display: block;
-  font-family: "bouton";
+  font-family: "main";
   padding: 0.5em 3em;
   border: 0.16em solid #ffffff;
   text-decoration: none;
