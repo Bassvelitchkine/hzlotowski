@@ -1,6 +1,7 @@
 var paragraphs = document.getElementsByTagName("section");
 var titles = document.getElementsByTagName("h1");
 var body = document.body;
+var didSlide = false;
 
 const handleMenuSlide = () => {
   for (let i = 0; i < titles.length; i++) {
@@ -13,5 +14,6 @@ const handleMenuSlide = () => {
     }
   }, 200);
 
-  body.setAttribute("overflow", "visible");
+  body.style.overflow = "visible";
+  didSlide = true;
 };

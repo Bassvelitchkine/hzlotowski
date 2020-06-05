@@ -32,6 +32,13 @@ header h1 {
   display: flex;
   justify-content: center;
   justify-items: center;
+  border: solid black;
+}
+
+#main.left {
+  display: flex;
+  justify-content: space-between;
+  justify-items: flex-start;
 }
 
 /* On s'occupe du menu */
@@ -42,6 +49,7 @@ header h1 {
   align-items: start;
   height: 80vh;
   width: 100%;
+  border: solid green;
 }
 
 #menu p {
@@ -72,6 +80,19 @@ section.left {
 }
 
 /* Ici on s'occupe de la gallerie */
-#gallerie section {
+#gallerie {
   display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 75%;
+  border: solid red;
+}
+
+#gallerie section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 80%;
 }

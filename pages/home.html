@@ -20,26 +20,26 @@
       <nav id="menu">
         <h1>FICTION</h1>
         <section>
-          <p>
+          <p id="canap">
             DAAZ - CANAP
           </p>
-          <p>
+          <p id="furtif">
             DAAZ - FURTIF
           </p>
         </section>
         <h1>PHOTOGRAPHY</h1>
         <section>
-          <p>
+          <p id="medium">
             MEDIUM - FORMAT
           </p>
-          <p>
+          <p id="trenteCinqMilli">
             35MM
           </p>
         </section>
       </nav>
       <!-- La gallerie -->
       <article id="gallerie">
-        <section id="canap">
+        <section id="gallerie-canap">
           <iframe
             src="https://player.vimeo.com/video/348174278?title=0&byline=0&portrait=0"
             width="640"
@@ -49,26 +49,28 @@
             allowfullscreen
           ></iframe>
         </section>
-        <section id="furtif">
+        <section id="gallerie-furtif">
           <iframe
             src="https://player.vimeo.com/video/348175779?title=0&byline=0&portrait=0"
-            width="640"
+            width="80%"
+            <!--
             height="480"
-            frameborder="0"
-            allow="autoplay; fullscreen"
-            allowfullscreen
-          ></iframe>
+            --
+          >
+            frameborder="0" allow="autoplay; fullscreen" allowfullscreen
+            ></iframe
+          >
         </section>
-        <section id="medium">
-          <img src="images/1.jpg" />
-          <img src="images/2.jpg" />
+        <section id="gallerie-medium">
+          <img src="../assets/photos/1.jpg" />
+          <img src="../assets/photos/2.jpg" />
         </section>
-        <section id="trenteCinqMilli">
-          <img src="images/d.jpg" />
-          <img src="images/b.jpg" />
-          <img src="images/c.jpg" />
-          <img src="images/a.jpg" />
-          <img src="images/e.jpg" />
+        <section id="gallerie-trenteCinqMilli">
+          <img src="../assets/photos/d.jpg" />
+          <img src="../assets/photos/b.jpg" />
+          <img src="../assets/photos/c.jpg" />
+          <img src="../assets/photos/a.jpg" />
+          <img src="../assets/photos/e.jpg" />
         </section>
       </article>
     </div>
@@ -77,5 +79,6 @@
     </footer> -->
   </body>
   <script src="../js/handleMenuSlide.js"></script>
+  <script src="../js/handleGallerieDisplay.js"></script>
   <script src="../js/handleMenuClick.js"></script>
 </html>
