@@ -30,6 +30,10 @@ body {
   header h1 {
     margin: 0;
   }
+
+  header img {
+    display: none;
+  }
 }
 
 header {
@@ -44,6 +48,40 @@ header h1 {
 
 header img {
   margin-right: 30px;
+}
+
+@media screen and (max-width: 550px) {
+  header h1 {
+    font-size: 1.8em;
+    margin-left: 30px;
+  }
+
+  header img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header h1 {
+    font-size: 1.5em;
+    margin-left: 30px;
+  }
+
+  header img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header h1 {
+    margin-left: 15px;
+  }
+
+  header img {
+    margin-right: 15px;
+  }
 }
 
 /* --------------------------------------- CONTENEUR ------------------------------------------- */
@@ -87,14 +125,14 @@ header img {
   transition: margin-left 0.6s ease-out;
 }
 
-section {
+#menu section {
   margin-left: 45%;
   margin-bottom: 50px;
   transition: margin-left 0.6s ease-out;
 }
 
 #menu h2.left,
-section.left {
+#menu section.left {
   margin-left: 20px;
 }
 
@@ -114,13 +152,41 @@ section.left {
 #flyoutMenu {
   width: 100vw;
   height: 100vh;
-  background-color: #ffe600;
+  background-color: black; /* #ffe600; */
+  color: white;
   position: fixed;
-  top: 100px;
+  top: 80px;
   left: 0;
   transform: translate3d(-100vw, 0, 0);
   transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+#flyoutMenu h2 {
+  /* border: solid black; */
+  margin-left: 50px;
+}
+
+#flyoutMenu section {
+  /* border: solid red; */
+  margin-left: 55px;
+}
+
+@media screen and (max-width: 400px) {
+  #flyoutMenu {
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #flyoutMenu {
+    top: 70px;
+  }
 }
 
 /* ----------------------------------- GALLERIE ----------------------------------- */
@@ -130,6 +196,7 @@ section.left {
   justify-content: flex-start;
   align-items: center;
   width: 70%;
+  margin-top: 30px;
   /* border: solid red; */
 }
 
@@ -151,7 +218,7 @@ section.left {
 
 #gallerie iframe {
   --width: 100%; /* Voir définition de variables en css. Ca permet ici de calculer la hauteur de l'élement en fonction de sa largeur*/
-  margin-top: 20px;
+  /* margin-top: 20px; */
   width: var(--width);
   height: calc(0.6 * var(--width));
   /* border: solid gray; */
