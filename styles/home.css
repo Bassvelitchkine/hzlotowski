@@ -60,6 +60,7 @@ header h1 {
 
 #menu p:hover {
   padding-left: 15px;
+  cursor: pointer;
 }
 
 #menu h2 {
