@@ -14,4 +14,5 @@
 # les fichiers et les dossiers qu'il peut ignorer. Dans notre cas, ce sera tout le dossier assets qui contient
 # les photos et les vidéos.
 
-assets
+assets/photos
+assets/videos
