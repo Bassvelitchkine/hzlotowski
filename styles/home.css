@@ -12,7 +12,7 @@
 
 body {
   font-family: "main";
-  overflow: hidden;
+  overflow: hidden; /* Pour ne pas afficher de scrollbars*/
   margin: 0;
 }
 
@@ -107,7 +107,7 @@ section.left {
 }
 
 #gallerie iframe {
-  --width: 100%;
+  --width: 100%; /* Voir définition de variables en css. Ca permet ici de calculer la hauteur de l'élement en fonction de sa largeur*/
   margin-top: 20px;
   width: var(--width);
   height: calc(0.6 * var(--width));

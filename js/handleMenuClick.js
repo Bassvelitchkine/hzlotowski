@@ -11,6 +11,7 @@ const handleStyleModifications = () => {
 
 const handleSection = (blockIdToDisplay) => {
   return function () {
+    // On fait certaines actions une seule fois, lorsqu'on fait glisser le menu pour la première fois
     if (!didSlide) {
       handleMenuSlide(blockIdToDisplay);
       handleStyleModifications();
@@ -20,6 +21,8 @@ const handleSection = (blockIdToDisplay) => {
   };
 };
 
+// On ajoute les event listeners de manières itératives sur chaque section du menu.
+// Voir "closures js" pour comprendre ce qu'il se passe ici
 for (let i = 0; i < menuSections.length; i++) {
   var section = menuSections[i];
   (function (_section) {
