@@ -16,7 +16,7 @@ body {
   margin: 0;
 }
 
-/* On s'occupe du header */
+/* ----------------------------------- EN TETE ----------------------------------- */
 header {
   margin: 0;
   font-family: "title";
@@ -42,7 +42,7 @@ header h1 {
   justify-items: flex-start;
 }
 
-/* On s'occupe du menu */
+/* ----------------------------------- MENU ----------------------------------- */
 #menu {
   display: flex;
   flex-direction: column;
@@ -81,7 +81,20 @@ section.left {
   margin-left: 20px;
 }
 
-/* Ici on s'occupe de la gallerie */
+@media screen and (max-width: 950px) {
+  #menu {
+    display: none;
+  }
+}
+
+/* ----------------------------------- FLYOUT MENU ----------------------------------- */
+@media screen and (min-width: 950px) {
+  #flyoutMenu {
+    display: none;
+  }
+}
+
+/* ----------------------------------- GALLERIE ----------------------------------- */
 #gallerie {
   display: none;
   flex-direction: column;
