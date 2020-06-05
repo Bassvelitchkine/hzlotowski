@@ -2,6 +2,8 @@ var gallerieSections = document
   .getElementById("gallerie")
   .getElementsByTagName("section");
 
+var didSlide = false;
+
 // On clique sur le bloc dont l'id est blockIdToDisplay. Il faut qu'on l'affiche et
 // qu'on fasse disparaitre les autres
 const handleGallerieDisplay = (blockIdToDisplay) => {
