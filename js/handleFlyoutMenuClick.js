@@ -9,8 +9,11 @@ const handleMobileStyleModifications = () => {
 
 const handleMobileSection = (blockIdToDisplay) => {
   return function () {
+    if (!didSlide) {
+      handleMobileStyleModifications();
+      didSlide = true;
+    }
     slideFlyoutMenu();
-    console.log(blockIdToDisplay);
     handleGallerieDisplay(blockIdToDisplay);
   };
 };

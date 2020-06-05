@@ -2,7 +2,6 @@ var menu = document.getElementById("menu");
 var paragraphs = menu.getElementsByTagName("section");
 var titles = document.getElementsByTagName("h2");
 var body = document.body;
-var didSlide = false;
 
 const handleMenuSlide = (blockIdToDisplay) => {
   // On fait d'abord glisser les titres de section

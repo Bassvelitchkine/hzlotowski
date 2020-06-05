@@ -51,6 +51,11 @@ header img {
 }
 
 @media screen and (max-width: 950px) {
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+  }
   header h1 {
     margin-left: 50px;
   }
@@ -228,7 +233,6 @@ header img {
 
 #gallerie iframe {
   --width: 100%; /* Voir définition de variables en css. Ca permet ici de calculer la hauteur de l'élement en fonction de sa largeur*/
-  /* margin-top: 20px; */
   width: var(--width);
   height: calc(0.6 * var(--width));
   /* border: solid gray; */
@@ -236,14 +240,14 @@ header img {
 
 @media screen and (max-width: 950px) {
   #gallerie {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     width: 98vw;
     height: 100%;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 100px;
     /* border: solid black; */
   }
   #gallerie section {
