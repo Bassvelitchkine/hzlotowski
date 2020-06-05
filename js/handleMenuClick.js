@@ -12,10 +12,11 @@ const handleStyleModifications = () => {
 const handleSection = (blockIdToDisplay) => {
   return function () {
     if (!didSlide) {
-      handleMenuSlide();
+      handleMenuSlide(blockIdToDisplay);
       handleStyleModifications();
+    } else {
+      handleGallerieDisplay(blockIdToDisplay);
     }
-    handleGallerieDisplay(blockIdToDisplay);
   };
 };
 

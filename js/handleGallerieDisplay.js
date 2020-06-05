@@ -5,7 +5,6 @@ var gallerieSections = document
 const handleGallerieDisplay = (blockIdToDisplay) => {
   for (let i = 0; i < gallerieSections.length; i++) {
     var section = gallerieSections[i];
-    console.log(section);
     if (section.id === `gallerie-${blockIdToDisplay}`) {
       section.style.display = "flex";
     } else {
