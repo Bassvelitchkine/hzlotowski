@@ -1,12 +1,12 @@
-var menuButton = document.getElementById("menuButton");
-var menu = document.getElementById("button");
+var flyoutMenu = document.getElementById("flyoutMenu");
+var flyoutMenuButton = document.getElementById("flyoutMenuButton");
 
-const slideMenu = () => {
-  if (menu.className === "") {
-    menu.className = "show";
+const slideflyoutMenu = () => {
+  if (flyoutMenu.className === "") {
+    flyoutMenu.className = "show";
   } else {
-    menu.className = "";
+    flyoutMenu.className = "";
   }
 };
 
-menuButton.addEventListener("click", slideMenu);
+flyoutMenuButton.addEventListener("click", slideflyoutMenu);
