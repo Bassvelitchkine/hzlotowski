@@ -281,7 +281,7 @@ header img {
   display: none;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   width: 70%;
   margin-top: 30px;
   /* border: solid red; */
