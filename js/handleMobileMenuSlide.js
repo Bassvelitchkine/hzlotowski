@@ -11,3 +11,8 @@ const slideFlyoutMenu = () => {
 };
 
 flyoutMenuButton.addEventListener("click", slideFlyoutMenu);
+
+// Pour que le menu volant s'affiche lorsqu'on arrive sur la page
+if (window.innerWidth <= 950) {
+  slideFlyoutMenu();
+}
