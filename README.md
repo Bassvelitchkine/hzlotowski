@@ -13,6 +13,23 @@ Quitter **git bash** et ajouter les médias au dossier :
 
 Lancer le site en ouvrant le fichier _index.html_ à la racine du dossier.
 
+# In case of updates
+
+En cas de changement sur le code, il suffit aux autres contributeurs du dossier de **pull** le répo git sur leur machine. Cela permet de ne modifier que les portions de code concernées sur la machine locale plutôt que de télécharger complètement le projet à chaque fois (imaginez pour un énorme projet avec des millions de lignes de codes, ce serait insupportable).
+
+Pour y parvenir, ouvrir **git bash** à la racine du dossier et exécuter la simple commande :
+
+```bash
+git pull
+```
+
+## Resources
+
+En cas de difficultés avec git et en cas de message d'erreur, visiter les sites suivants qui sont de bons aides mémoires. Aller sur Stack Overflow si le problème persiste.
+
+- [Git - No Deep Shit](https://rogerdudler.github.io/git-guide/index.fr.html)
+- [Les commandes git que vous devez absolument connaitre](https://www.hostinger.fr/tutoriels/commandes-git/)
+
 # Contributors
 
 - **Bastien Velitchkine** - _Student @ CentraleSupélec_ - Programmer - [Bassvelitchkine](https://github.com/Bassvelitchkine)
