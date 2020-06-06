@@ -3,8 +3,19 @@ var main = document.getElementById("main");
 var flyoutMenu = document.getElementById("flyoutMenu");
 var flyoutMenuSections = flyoutMenu.getElementsByTagName("p");
 
+var menu = document.getElementById("menu");
+var paragraphs = menu.getElementsByTagName("section");
+var titles = document.getElementsByTagName("h2");
+
 const handleMobileStyleModifications = () => {
   gallerie.style.display = "flex";
+  // On fait d'abord glisser les titres de section
+  for (let i = 0; i < titles.length; i++) {
+    titles[i].className = "left";
+  }
+  for (let i = 0; i < paragraphs.length; i++) {
+    paragraphs[i].className = "left";
+  }
 };
 
 const handleMobileSection = (blockIdToDisplay) => {
