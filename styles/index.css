@@ -31,13 +31,40 @@ h1 p {
   margin: 0;
 }
 
-/* Ici on s'occupe de la video */
+/* Ici on s'occupe de la video/de l'image */
 #video {
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 0;
+}
+
+img {
+  display: none;
+}
+
+/* responsive*/
+@media screen and (max-width: 950px) {
+  #video {
+    display: none;
+  }
+}
+
+/* ATTENTION LE RATIO DEPEND DE L'IMAGE CHOISI POUR COUVRIR L'ECRAN. ICI C'EST CHURCH.PNG QUI A UN RATIO DE 1 */
+@media screen and (max-width: 950px), (max-aspect-ratio: 1) {
+  img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 950px), (min-aspect-ratio: 1) {
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 /* En fonction du ratio entre largeur et hauteur de la fenêtre, on prend l'une ou l'autre des décisions concernant la taille */
