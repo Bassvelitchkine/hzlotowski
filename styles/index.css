@@ -14,19 +14,13 @@ body {
   overflow: hidden;
 }
 
-/* body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 /* On s'occupe du titre */
 h1 {
   position: absolute;
   top: 0;
   left: 0;
   margin: 0;
-  font-family: "main";
+  font-family: "main", "Arial Narrow Bold", sans-serif;
   z-index: 200;
   width: 100%;
   padding: 20px;
@@ -75,7 +69,7 @@ h1 p {
 
 #bouton a {
   display: block;
-  font-family: "main";
+  font-family: "main", "Arial Narrow Bold", sans-serif;
   padding: 0.5em 3em;
   border: 0.16em solid #ffffff;
   text-decoration: none;
